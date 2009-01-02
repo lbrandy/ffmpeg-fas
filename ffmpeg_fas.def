@@ -1,0 +1,14 @@
+LIBRARY	ffmpeg_fas
+EXPORTS
+	fas_initialize
+	fas_open_video
+	fas_close_video
+	fas_free_frame
+	fas_get_frame
+	fas_get_frame_index
+	fas_get_frame_duration
+	fas_step_forward
+	fas_seek_to_frame
+	fas_get_frame_count
+	fas_get_current_height
+	fas_get_current_width

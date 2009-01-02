@@ -1,0 +1,14 @@
+The frame-accurate seek library extension to ffmpeg requires ffmpeg. 
+Getting the most recent version of ffmpeg and building it from source is
+recommended:
+
+svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg
+
+The test/example build script requires ffmpeg be checked out (or symlinked)
+and built (./configure ; make) from the base directory. 
+
+Features:
+1) Simplified interface for video processing 
+2) Frame-accurate seeking using a seek-table
+3) Online creation of a seek-table through normal decoding
+4) Saving and loading of seek-tables.
