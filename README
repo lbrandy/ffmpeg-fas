@@ -1,3 +1,20 @@
+Released under Lesser GNU Public License (LGPL)
+
+This is an extension to the ffmpeg video decoding library meant to support
+a variety of extra functionality in support of video processing applications.
+The primary additional feature added is the ability to do frame-accurate seeking 
+(by frame number). This is accomplished in a codec/format independant manner
+using seek tables. 
+
+It has been built and tested under Linux and Windows.
+
+Features:
+1) Simplified interface for video processing 
+2) Frame-accurate seeking using a seek-table
+3) Online creation of a seek-table through normal decoding
+4) Saving and loading of seek-tables
+
+Getting up and running:
 The frame-accurate seek library extension to ffmpeg requires ffmpeg. 
 Getting the most recent version of ffmpeg and building it from source is
 recommended:
@@ -6,9 +23,3 @@ svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg
 
 The test/example build script requires ffmpeg be checked out (or symlinked)
 and built (./configure ; make) from the base directory. 
-
-Features:
-1) Simplified interface for video processing 
-2) Frame-accurate seeking using a seek-table
-3) Online creation of a seek-table through normal decoding
-4) Saving and loading of seek-tables.
