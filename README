@@ -8,6 +8,8 @@ using seek tables.
 
 It has been built and tested under Linux and Windows.
 
+**NOTE [12/09]**: This package hasn't been kept fully up-to-date with ffmpeg's changing API. Some modification is necessary to remove calls to deprecated ffmpeg functionality. Patches welcome. **
+
 Features:
 1) Simplified interface for video processing 
 2) Frame-accurate seeking using a seek-table
